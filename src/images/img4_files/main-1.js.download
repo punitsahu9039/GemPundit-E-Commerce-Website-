@@ -1,0 +1,434 @@
+/* =================================
+------------------------------------
+	BPW INDIA | Website Template
+	Version: 1.0
+ ------------------------------------
+ ====================================*/
+
+
+ 'use strict';
+
+
+ /*
+ jQuery(window).on('load', function() {
+   
+     jQuery(".loader").fadeOut();
+     jQuery("#preloder").delay(400).fadeOut("slow");
+ 
+ });*/
+ 
+ (function($) {
+     /*------------------
+         Navigation
+     --------------------*/
+ 
+ 
+     /*------------------
+         Category menu
+     --------------------*/
+     jQuery('.category-menu > li').hover( function(e) {
+      jQuery(this).addClass('active');
+         e.preventDefault();
+     });
+     jQuery('.category-menu').mouseleave( function(e) {
+      jQuery('.category-menu li').removeClass('active');
+         e.preventDefault();
+     });
+ 
+ 
+     /*------------------
+         Background Set
+     --------------------*/
+     jQuery('.set-bg').each(function() {
+         var bg = $(this).data('setbg');
+         jQuery(this).css('background-image', 'url(' + bg + ')');
+     });
+     
+     // Init AOS
+       function aos_init() {
+         AOS.init({
+           duration: 1000,
+           once: true
+         });
+       }
+      /* jQuery(window).on('load', function() {
+         aos_init();
+       });*/
+
+    
+       jQuery('.hero-slider-wrap').slick({
+        slidesToShow: 1,
+        arrows: true,
+		speed: 300,
+        dots: false,
+        autoplay: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='bx bx-chevron-left'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='bx bx-chevron-right'></i></button>",
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              slidesToShow: 1
+            }
+          }
+        ]
+    });
+
+    jQuery('.home-blog-slider').slick({
+      slidesToShow: 3,
+      arrows: true,
+      dots: false,
+      autoplay: true,
+      prevArrow:"<button type='button' class='slick-prev pull-left'><i class='bx bx-chevron-left'></i></button>",
+      nextArrow:"<button type='button' class='slick-next pull-right'><i class='bx bx-chevron-right'></i></button>",
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: true,
+            slidesToShow: 1
+          }
+        }
+      ]
+  });
+
+
+  jQuery('.cross-sells ul').slick({
+        slidesToShow: 3,
+        
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              slidesToShow: 2
+            }
+          }
+        ]
+      });
+
+      $('.slide-prev-cross-sells').click(function(e){ 
+      	//e.preventDefault(); 
+        $('.cross-sells ul').slick('slickPrev');
+      } );
+      
+      $('.slide-next-cross-sells').click(function(e){
+        //e.preventDefault(); 
+        $('.cross-sells ul').slick('slickNext');
+      } );
+
+
+
+
+      $('.common-profile-slider ul').slick({
+        slidesToShow: 5,
+        
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              centerPadding: '40px',
+              slidesToShow: 2
+            }
+          }
+        ]
+      });
+
+      $('.slide-prev-related-products').click(function(e){ 
+      	//e.preventDefault(); 
+        $('.common-profile-slider ul').slick('slickPrev');
+      } );
+      
+      $('.slide-next-related-products').click(function(e){
+        //e.preventDefault(); 
+        $('.common-profile-slider ul').slick('slickNext');
+      } );
+
+      $('.common-profile-archive').slick({
+        slidesToShow: 4,
+        infinite: true,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: false,
+              centerPadding: '40px',
+              slidesToShow: 2
+            }
+          }
+        ]
+      });
+
+      $('.slide-prev-common-profile-archive').click(function(e){ 
+      	//e.preventDefault(); 
+        $('.common-profile-archive').slick('slickPrev');
+      } );
+      
+      $('.slide-next-common-profile-archive').click(function(e){
+        //e.preventDefault(); 
+        $('.common-profile-archive').slick('slickNext');
+      } );
+
+      
+
+      $('.profiles-slider').slick({
+        slidesToShow: 5,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        infinite: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              /*centerMode: true,
+              centerPadding: '40px',*/
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              /*centerMode: true,
+              centerPadding: '40px',*/
+              slidesToShow: 2
+            }
+          }
+        ]
+      });
+
+      $('.customer-reviews-slider').slick({
+        slidesToShow: 3,
+        arrows: true,
+        dots: false,
+        autoplay: false,
+        infinite: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='bx bx-chevron-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='bx bx-chevron-right' aria-hidden='true'></i></button>",
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              /*centerMode: true,
+              centerPadding: '40px',*/
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              /*centerMode: true,
+              centerPadding: '40px',*/
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+	 
+	  $('.publication-image-gallery').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  fade: true,
+		  asNavFor: '.publication-image-gallery-nav'
+	});
+	$('.publication-image-gallery-nav').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		asNavFor: '.publication-image-gallery',
+		dots: false,
+		centerMode: false,
+		focusOnSelect: true
+	});
+	
+      
+ 
+
+      /* Sticky Header JS Start */
+    jQuery(window).scroll(function() { // this will work when your window scrolled.
+        var height = jQuery(window).scrollTop(); //getting the scrolling height of window
+        if (height > 100) {
+            jQuery(".header-section").addClass("sticky_head");
+        } else {
+            jQuery(".header-section").removeClass("sticky_head");
+        }
+    });
+    /* Sticky Header JS End */
+
+   /* $(document).on('change', '.filter input', function() {
+      if($(window).width() < 767) {
+          $('.shop-sidebar').css('transform', 'translateX(-100%)');
+      }
+      $('.neve-main > .loading').remove();
+      $('.neve-main').prepend('<div class="loading"><img src="/wp-content/themes/neve-child/images/loader.gif"></div>');
+      $('.cat-products').removeClass('nomore');
+      $('.not-found').remove();
+      $('#page_number').val('1');
+      var sort = $('input[name="sort"]:checked').val();
+      var price = $('input[name="price"]:checked').val();
+      //var category = $('input[name="category"]:checked').val();
+      //var category_name = $('input[name="category"]:checked').data('name');
+      var category = "";
+      var category_name = "";
+      $('input[name="category"]:checked').each(function() {
+          category += $(this).val()+',';
+          category_name += $(this).data('name')+', ';
+      });
+      category = category.replace(/(\s*,?\s*)*$/, "");
+      category_name = category_name.replace(/(\s*,?\s*)*$/, "");
+      $.ajax({
+          method:'POST',
+          url:'/wp-admin/admin-ajax.php',
+          //dataType:'json',
+          data:{ action:'filter_products', sort: sort, price: price, category: category },
+          success:function(data){
+              $('.cat-name').text(category_name);
+              $('.neve-main > .loading').remove();
+              $('ul.products').html(data);
+              $('html, body').animate({
+                  scrollTop: parseInt($("ul.products").offset().top) - 100
+              }, 600);
+          }
+      });
+      //}
+  });
+*/
+/*
+  if($('#pa_services').length && $('#pa_services').val().length > 0) {
+    $('.custom-options label[data-slug="'+$('#pa_services').val()+'"]').addClass('active');
+}*/
+/*
+$('.custom-options .checkbox-container').click(function() {
+    var slug = $(this).data('slug');
+    var price = 'Book Now ( $'+$(this).data('variation-price')+')';
+    var price = $(".single_add_to_cart_button").html(price);
+    $('.custom-options .checkbox-container').removeClass('active');
+    $(this).addClass('active');
+    $('#pa_services').val(slug).change();
+});*/
+
+$('.gallery').each(function() { // the containers for all your galleries
+  $(this).magnificPopup({
+      delegate: 'a', // the selector for gallery item
+      type: 'image',
+      gallery: {
+        enabled:true
+      }
+  });
+});
+
+$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+  type: 'iframe',
+  mainClass: 'mfp-fade magnific-popup',
+  removalDelay: 160,
+  preloader: false,
+
+  fixedContentPos: false
+});
+
+$('#customMenuToggle').click(function(){
+  console.log('Working');
+  $('mega-menu-toggle').toggleClass('mega-menu-open');
+  $('body').toggleClass('mega-menu-menu-1-mobile-open');
+})
+
+
+
+
+jQuery(document).ready(function(){
+    $(".nav-pills .active").click(function(){
+        $('nav-pills .nav-link').removeClass('active');
+    });
+});
+
+jQuery('body').on('click', '#signup-btn', function (e) {
+  e.preventDefault();
+  jQuery('#signup').show();
+  jQuery('#login').hide();
+});
+jQuery('body').on('click', '#login-btn', function (e) {
+  e.preventDefault();
+  jQuery('#login').show();
+  jQuery('#signup').hide();
+})
+	 
+jQuery(document).ready(function(){
+	jQuery('#showshareIcons').click(function(){
+		jQuery('.a2a_floating_style').toggle('fast');
+	})
+})
+ 
+ 
+ })(jQuery);
+ 
+/*function enterMaleDetails(){
+    jQuery("#kundalifemaledetails").hide();
+    jQuery("#kundalimaledetails").show();
+}
+function backtoFemaleDetails(){
+    jQuery("#kundalifemaledetails").show();
+    jQuery("#kundalimaledetails").hide();
+}
+*/

@@ -1,0 +1,113 @@
+/*===========================================================
+GEMS RECOMMENDATION TOOL
+=============================================================*/
+
+jQuery(document).ready(function(){
+	const d = new Date();
+	let year = d.getFullYear();
+    jQuery("#gemsRecommendationForm").validate({
+		rules: {
+			gem_recommendation_name: 'required',
+			gem_recommendation_email: {
+				required: true,
+				email: true,
+			},
+			gem_recommendation_place_of_birth: 'required',
+			gem_recommendation_date_of_birth: {
+				required: true,
+				range: [1, 31]
+			},
+			gem_recommendation_month_of_birth: 'required',
+			gem_recommendation_year_of_birth: {
+				required: true,
+				range: [1930, year]
+			},
+			gem_recommendation_hour_of_birth: 'required',
+			gem_recommendation_minute_of_birth: 'required',
+			gem_recommendation_phone:{
+              required:true,
+              minlength:10,
+              maxlength:10,
+              number: true
+             }
+		},
+        submitHandler: function(form) {
+            jQuery.ajax({
+                url: gemminesAjax.ajaxurl,
+                type: "POST",
+                dataType: 'json',
+                beforeSend: function () {
+                    jQuery("#gemsRecommendationBtn").html("<i class='bx bx-loader-alt bx-spin'></i> Please Wait... ");
+                    jQuery("#gemsRecommendationBtn").attr('disabled', 'disabled');
+                },
+                complete: function (response) {
+                    jQuery("#gemsRecommendationBtn").html("Get Recommendation");
+                    jQuery("#gemsRecommendationBtn").removeAttr('disabled', 'disabled');
+                },
+                data: {
+                    action: 'get_free_recommendation_tool',
+                    data: jQuery('#gemsRecommendationForm').serialize()
+                },
+                success: function(data) {
+                    if(data.status == 1){
+
+                        jQuery('#gemrecommendFullName').html(data.post_data.gem_recommendation_name);
+                        jQuery('#gemrecommendFullName1').html(data.post_data.gem_recommendation_name);
+                        jQuery('#gemrecommendDob').html(data.post_data.gem_recommendation_date_of_birth+'-'+data.post_data.gem_recommendation_month_of_birth+'-'+data.post_data.gem_recommendation_year_of_birth);
+                        jQuery('#gemrecommendBirthTime').html(data.post_data.gem_recommendation_time_of_birth);
+                        jQuery('#gemrecommendRashi').html(data.astro_details.sign);
+                        jQuery('#gemrecommendlagna').html(data.astro_details.ascendant);
+                        jQuery('#gemrecommendTithi').html(data.astro_details.Tithi);
+                        jQuery('#gemrecommendNadi').html(data.astro_details.Nadi);
+                        jQuery('#gemrecommendNaksahtra').html(data.astro_details.Naksahtra);
+                        jQuery('#gemrecommendEmail').html(data.post_data.gem_recommendation_email);
+                        jQuery('#gemrecommendLagnaChart').html(data.horoscope_chart.svg);
+
+                        jQuery('#gemrecommendations').html(data.gem_recommend_html);
+
+                        jQuery('#gemsRecommendationSection').css('display', 'block');
+                        jQuery('html, body').animate({
+                            scrollTop: jQuery("#gemsRecommendationSection").offset().top
+                        }, 2000);  
+
+                    } else if(data.status == 0) {
+                        jQuery('.gemrecommendError').html('<div class="alert alert-danger">'+data.msg+'</div>');
+                    }
+                }
+            });
+        },
+    });
+});
+
+
+/*============================================================================
+KUNDALI MILAN TOOL
+=============================================================================*/
+
+jQuery(document).ready(function(){
+    jQuery("#kundaliMilan").validate({
+        submitHandler: function(form) {
+
+            jQuery.ajax({
+                url: gemminesAjax.ajaxurl,
+                type: "POST",
+                dataType: 'json',
+                beforeSend: function () {
+                    jQuery("#kundaliMilanbtn").html("<i class='bx bx-loader-alt bx-spin'></i> Please Wait... ");
+                    jQuery("#kundaliMilanbtn").attr('disabled', 'disabled');
+                },
+                complete: function (response) {
+                    jQuery("#kundaliMilanbtn").html("Make Matching");
+                    jQuery("#kundaliMilanbtn").removeAttr('disabled', 'disabled');
+                },
+                data: {
+                    action: 'kundali_match_tool',
+                    data: jQuery('#kundaliMilan').serialize()
+                },
+                success: function(data) {
+                    console.log(data);
+                }
+            });
+        },
+    });
+});

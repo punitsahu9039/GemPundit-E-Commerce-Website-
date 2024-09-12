@@ -1,0 +1,175 @@
+/* Custom General jQuery
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+;(function($, window, document, undefined) {
+
+	//Genaral Global variables
+	//"use strict";
+	var $win = $(window);
+	var $doc = $(document);
+	var $winW = function(){ return $(window).width(); };
+	var $winH = function(){ return $(window).height(); };
+	var $screensize = function(element){  
+			$(element).width($winW()).height($winH());
+		};
+		
+		var screencheck = function(mediasize){
+			if (typeof window.matchMedia !== "undefined"){
+				var screensize = window.matchMedia("(max-width:"+ mediasize+"px)");
+				if( screensize.matches ) {
+					return true;
+				}else {
+					return false;
+				}
+			} else { // for IE9 and lower browser
+				if( $winW() <=  mediasize ) {
+					return true;
+				}else {
+					return false;
+				}
+			}
+		};
+
+	$doc.ready(function() {
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/		
+
+		// Remove No-js Class
+
+		$("html").removeClass('no-js').addClass('js');
+        
+        const $header = $(".navmenu > div");
+        const $menu = $(".navmenu");
+        const headerOffsetTop = $header.offset().top;
+       /* $(window).scroll(function() {
+            if ($(window).scrollTop() >= headerOffsetTop) {
+                $menu.addClass("sticky");
+            } else {
+                $menu.removeClass("sticky");
+            }
+        });*/
+		
+		if($('.woof-custom-tab').length){
+			$(document).on('click','.woof-custom-tab > a',function(){
+				var $id = $(this).attr('id');
+				$('.woof-custom-filter .woof.woof_sid .woof_container').hide();
+				$('.woof-custom-filter .woof.woof_sid .woof_container.woof_'+$id).show();
+				return false;
+			});
+		}
+		if($('#gem_recommendation_place_of_birth').length){
+			$(document).ready(function() {
+			// Initialize Google Places Autocomplete
+			var input = document.getElementById('gem_recommendation_place_of_birth');
+			var autocomplete = new google.maps.places.Autocomplete(input);
+			// Handle place selection
+				google.maps.event.addListener(autocomplete, 'place_changed', function() {
+					var place = autocomplete.getPlace();
+
+					// Get the city name
+					var cityName = null;
+					for (var i = 0; i < place.address_components.length; i++) {
+					var component = place.address_components[i];
+					if (component.types.includes('locality')) {
+						cityName = component.long_name;
+						break;
+					}
+					}
+
+					// Display the city name
+					/*if (cityName) {
+						$('#gem_recommendation_place_of_birth').val(cityName);
+					}*/
+				});
+			});
+		}
+
+		if($('.p-share-cta > a').length){
+			$('.p-share-cta > a').on('click',function(){
+				var $this = $(this);
+				$this.parents('.p-share-cta').find('.p-share-box').toggleClass('show');
+				return false;
+			});
+		}
+
+		$(document).on('click','.gmodal-toggle', function(e) {
+			e.preventDefault(); 
+			var $this = $(this);
+			if($('.gmodal').hasClass('is-visible')){
+				$('#popup-pvideo .gmodal-content').html('');
+			}
+			else{
+				var video_url = $this.attr('data-video-url');
+				var iframe = '<div class="responsive-video-container"><iframe class="responsive-iframe" src="'+video_url+'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
+				$('#popup-pvideo .gmodal-content').html(iframe);
+				
+			}
+			$('.gmodal').toggleClass('is-visible');
+		});
+		
+		if($('#ShopFilterOffCanvas .apply-filter').length){
+			$('#ShopFilterOffCanvas .apply-filter').on('click',function(){
+				$('#ShopFilterOffCanvas .btn-close').trigger('click');
+			});
+		}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/		
+
+	});	
+
+
+
+/*All function nned to define here for use strict mode
+
+----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+	
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+})(jQuery, window, document);
+document.addEventListener('DOMContentLoaded', function () {
+	//custom_popup();
+});
+
+//document.addEventListener('DOMContentLoaded', function () {
+	
+	function custom_popup(){
+	var modals = document.querySelectorAll(".gmodal");
+	var triggers = document.querySelectorAll(".gpopup-trigger");
+	var closeButtons = document.querySelectorAll(".gclose-button");
+  
+	function toggleModal(modal) {
+	  modal.classList.toggle("gshow-modal");
+	}
+  
+	function windowOnClick(event) {
+		modals.forEach(function (modal) {
+		  if (event.target === modal) {
+			toggleModal(modal);
+		  }
+		});
+	}
+  
+	triggers.forEach(function (trigger, index) {
+		trigger.addEventListener("click", function () {
+		  var targetModalId = trigger.getAttribute("data-modal");
+		  var targetModal = document.getElementById(targetModalId);
+		  toggleModal(targetModal);
+		});
+	}); 
+  
+	closeButtons.forEach(function (button) {
+		button.addEventListener("click", function () {
+		  var modal = button.closest(".gmodal");
+		  toggleModal(modal);
+		});
+	});
+  
+	window.addEventListener("click", windowOnClick);
+	}
+  //});
+  

@@ -1,0 +1,328 @@
+{
+    
+"cards":[
+    {
+    "id":"1",
+"name": "yellow sapphire",
+"code": "78656",
+"price":"7000",
+"image":"img1.png",
+"qty":1
+},
+{
+    "id":"2",
+"name": "yellow sapphire",
+"code": "78656",
+"price":"7000",
+"image":"img2.png",
+"qty":1
+},    {
+    "id":"3",
+"name": "yellow sapphire",
+"code": "78656",
+"price":"7000",
+"image":"img3.png",
+"qty":1
+},    {
+    "id":"4",
+"name": "yellow sapphire",
+"code": "78656",
+"price":"7000",
+"image":"img4.png",
+"qty":1
+},    {
+    "id":"5",
+"name": "yellow sapphire",
+"code": "78656",
+"price":"7000",
+"image":"img5.png",
+"qty":1
+},    {
+    "id":"6",
+"name": "yellow sapphire",
+"code": "78656",
+"price":"7000",
+"image":"img6.png",
+"qty":1
+},    {
+    "id":"7",
+"name": "yellow sapphire",
+"code": "78656",
+"price":"7000",
+"image":"img7.png",
+"qty":1
+},    {
+    "id":"8",
+"name": "yellow sapphire",
+"code": "78656",
+"price":"7000",
+"image":"img8.png",
+"qty":1
+},
+{
+    "id":"9",
+"name": "yellow sapphire",
+"code": "78656",
+"price":"7000",
+"image":"img9.png",
+"qty":1
+},
+{
+    "id":"10",
+"name": "yellow sapphire",
+"code": "78656",
+"price":"7000",
+"image":"img10.png",
+"qty":1
+},
+
+{
+    "id":"10",
+"name": "Blue sapphire",
+"code": "76",
+"price":"8000",
+"image":"blue1..png",
+"qty":1
+},
+{
+    "id":"11",
+"name": "Blue sapphire",
+"code": "77",
+"price":"7000",
+"image":"blue2.png",
+"qty":1
+},
+{
+    "id":"12",
+"name": "Blue sapphire",
+"code": "78",
+"price":"7000",
+"image":"blue3.png",
+"qty":1
+},
+{
+    "id":"13",
+"name": "Blue sapphire",
+"code": "79",
+"price":"7000",
+"image":"blue4.png",
+"qty":1
+},
+{
+    "id":"14",
+"name": "Blue sapphire",
+"code": "80",
+"price":"7000",
+"image":"blue5.png",
+"qty":1
+},
+{
+    "id":"15",
+"name": "Blue sapphire",
+"code": "81",
+"price":"7000",
+"image":"blue6.png",
+"qty":1
+},
+{
+    "id":"16",
+"name": "Blue sapphire",
+"code": "86",
+"price":"7000",
+"image":"blue7.png",
+"qty":1
+},
+{
+    "id":"17",
+"name": "Blue sapphire",
+"code": "87",
+"price":"7000",
+"image":"blue8.png",
+"qty":1
+},
+{
+    "id":"18",
+"name": "Blue sapphire",
+"code": "87",
+"price":"7000",
+"image":"blue9.png",
+"qty":1
+},
+{
+    "id":"19",
+"name": "Blue sapphire",
+"code": "87",
+"price":"7000",
+"image":"blue10.png",
+"qty":1
+},
+{
+    "id":"26",
+"name": "Green sapphire",
+"code": "89",
+"price":"7000",
+"image":"green1.png",
+"qty":1
+},
+{
+    "id":"27",
+"name": "Green sapphire",
+"code": "89",
+"price":"7000",
+"image":"green2.png",
+"qty":1
+},
+{
+    "id":"28",
+"name": "Green sapphire",
+"code": "89",
+"price":"7000",
+"image":"green3.png",
+"qty":1
+},{
+    "id":"29",
+"name": "Green sapphire",
+"code": "89",
+"price":"7000",
+"image":"green4.png",
+"qty":1
+},
+{
+    "id":"30",
+"name": "Green sapphire",
+"code": "89",
+"price":"7000",
+"image":"green5.png",
+"qty":1
+},
+{
+    "id":"31",
+"name": "Green sapphire",
+"code": "89",
+"price":"7000",
+"image":"green6.png",
+"qty":1
+},
+{
+    "id":"32",
+"name": "Green sapphire",
+"code": "89",
+"price":"7000",
+"image":"green7.png",
+"qty":1
+},
+{
+    "id":"33",
+"name": "Green sapphire",
+"code": "89",
+"price":"7000",
+"image":"green8.png",
+"qty":1
+},
+{
+    "id":"34",
+"name": "Green sapphire",
+"code": "89",
+"price":"7000",
+"image":"green9.png",
+"qty":1
+},
+{
+    "id":"35",
+"name": "Green sapphire",
+"code": "89",
+"price":"7000",
+"image":"green10.png",
+"qty":1
+},
+{
+    "id":"36",
+"name": "Red sapphire",
+"code": "89",
+"price":"7000",
+"image":"ruby1.png",
+"qty":1
+},
+{
+    "id":"37",
+"name": "Red sapphire",
+"code": "89",
+"price":"7000",
+"image":"ruby2.png",
+"qty":1
+},
+{
+    "id":"38",
+"name": "Red sapphire",
+"code": "89",
+"price":"7000",
+"image":"rubby3.png",
+"qty":1
+},
+{
+    "id":"39",
+"name": "Red sapphire",
+"code": "89",
+"price":"7000",
+"image":"rubby4.png",
+"qty":1
+},
+{
+    "id":"40",
+"name": "Red sapphire",
+"code": "89",
+"price":"7000",
+"image":"rubby5.png",
+"qty":1
+},
+{
+    "id":"41",
+"name": "Red sapphire",
+"code": "89",
+"price":"7000",
+"image":"rubby6.png",
+"qty":1
+},
+{
+    "id":"42",
+"name": "Red sapphire",
+"code": "89",
+"price":"7000",
+"image":"rubby7.png",
+"qty":1
+},
+{
+    "id":"43",
+"name": "Red sapphire",
+"code": "89",
+"price":"7000",
+"image":"rubby8.png",
+"qty":1
+},
+{
+    "id":"44",
+"name": "Red sapphire",
+"code": "89",
+"price":"7000",
+"image":"rubby9.png",
+"qty":1
+},
+{
+    "id":"45",
+"name": "Red sapphire",
+"code": "89",
+"price":"7000",
+"image":"rubby10.png",
+"qty":1
+}
+
+
+
+
+
+
+
+
+]
+
+}
