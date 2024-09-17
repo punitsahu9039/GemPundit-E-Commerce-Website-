@@ -9,6 +9,7 @@ import { VscAccount } from "react-icons/vsc";
 import { CiSearch } from "react-icons/ci";
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -33,23 +34,14 @@ const cartpage=()=>{
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-             {/* <Form  className="d-flex">
-            <Form.Control
-            style={{backgroundColor:"#f56c42"}}
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button style={{marginRight:"300px"}} variant="outline-success">Search</Button>
-          </Form> */}
+        
           <CiSearch style={{margin:"13px"}} />
 
           <Nav.Link href="#action2">Search</Nav.Link>
 
 <VscAccount style={{margin:"13px"}} />
 
-            <Nav.Link href="home">Home</Nav.Link>
+            <Nav.Link as={Link} to="home">Home</Nav.Link>
 
             < IoIosHeartEmpty style={{margin:"13px"}} />
             <Nav.Link href="#action2">Wishlist</Nav.Link>

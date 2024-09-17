@@ -19,13 +19,14 @@ const BlueSapphire=()=>{
     loaddata();
    },[])
 
-   const addDataToCart=(id, name, code, price, image)=>{
+   const addDataToCart=(id, name, code, price, image, qty)=>{
     dispatch(addToCart({
         id:id,
         name:name,
         code:code,
         price:price,
-        image:image
+        image:image,
+        qty:qty
     }))
    }
 
@@ -36,11 +37,11 @@ const BlueSapphire=()=>{
       <img src={"./src/cardimages/"+key.image} alt="" />
       <Card.Body>
         <Card.Title>{key.name}</Card.Title>
-        <Card.Text>
+        <Card.Text>SKU-
          {key.code}
         </Card.Text>
-        <Card.Title>{key.price}</Card.Title>
-        <Button variant="primary" onClick={()=>{addDataToCart(key.id, key.name, key.code, key.price, key.image)}}>Add To Cart</Button>
+        <Card.Title>Price={key.price}</Card.Title>
+        <Button variant="primary" onClick={()=>{addDataToCart(key.id, key.name, key.code, key.price, key.image, key.qty)}}>Add To Cart</Button>
       </Card.Body>
     </Card>
         </>

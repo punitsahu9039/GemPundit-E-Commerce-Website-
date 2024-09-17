@@ -16,11 +16,11 @@ const Cart = () => {
   }
 
   const CartData = MyCartData.map((key) => {
-    grandtotal = grandtotal + key.qty * key.price;
+     grandtotal = grandtotal + key.qty * key.price;
     return (
       <>
         <tr >
-          <td><img src={"./src/cardimages/" + key.image} alt="" /></td>
+          <td><img src={"./src/cardimages/" + key.image} alt="" height="100px" width="100px" /></td>
           <td>{key.name}</td>
           <td>{key.code}</td>
           <td>

@@ -38,9 +38,9 @@ const RedSapphire=()=>{
       <Card.Body>
         <Card.Title>{key.name}</Card.Title>
         <Card.Text>
-         {key.code}
+         {key.code}SKU-
         </Card.Text>
-        <Card.Title>{key.price}</Card.Title>
+        <Card.Title>Price={key.price}</Card.Title>
         <Button variant="primary" onClick={()=>{addDataToCart(key.id, key.name, key.code, key.price, key.image , key.qty)}}>Add To Cart</Button>
       </Card.Body>
     </Card>

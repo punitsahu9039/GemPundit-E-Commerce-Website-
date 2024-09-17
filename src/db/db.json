@@ -4,74 +4,74 @@
     {
     "id":"1",
 "name": "yellow sapphire",
-"code": "78656",
-"price":"7000",
+"code": "Y9039 3.77 MM - 0.28 CARATS",
+"price":9400,
 "image":"img1.png",
 "qty":1
 },
 {
     "id":"2",
 "name": "yellow sapphire",
-"code": "78656",
-"price":"7000",
+"code": "Y9040 8.97 MM - 0.29 CARATS",
+"price":8700,
 "image":"img2.png",
 "qty":1
 },    {
     "id":"3",
 "name": "yellow sapphire",
-"code": "78656",
-"price":"7000",
+"code": "Y9041 3.88 MM - 0.10 CARATS",
+"price":5600,
 "image":"img3.png",
 "qty":1
 },    {
     "id":"4",
 "name": "yellow sapphire",
-"code": "78656",
-"price":"7000",
+"code": "Y9042 2.89 MM - 0.12 CARATS",
+"price":6590,
 "image":"img4.png",
 "qty":1
 },    {
     "id":"5",
 "name": "yellow sapphire",
-"code": "78656",
-"price":"7000",
+"code": "Y9043 3.76 MM - 0.36 CARATS",
+"price":8799,
 "image":"img5.png",
 "qty":1
 },    {
     "id":"6",
 "name": "yellow sapphire",
-"code": "78656",
-"price":"7000",
+"code": "Y9044 3.77 MM - 0.28 CARATS",
+"price":9099,
 "image":"img6.png",
 "qty":1
 },    {
     "id":"7",
 "name": "yellow sapphire",
-"code": "78656",
-"price":"7000",
+"code": "Y9045 3.77 MM - 0.28 CARATS" ,
+"price":7896,
 "image":"img7.png",
 "qty":1
 },    {
     "id":"8",
 "name": "yellow sapphire",
-"code": "78656",
-"price":"7000",
+"code": "Y9046 3.77 MM - 0.28 CARATS",
+"price":8765,
 "image":"img8.png",
 "qty":1
 },
 {
     "id":"9",
 "name": "yellow sapphire",
-"code": "78656",
-"price":"7000",
+"code": "Y9047 3.77 MM - 0.28 CARATS",
+"price":8970,
 "image":"img9.png",
 "qty":1
 },
 {
     "id":"10",
 "name": "yellow sapphire",
-"code": "78656",
-"price":"7000",
+"code": "Y9048 3.88 MM - 0.10 CARATS",
+"price":9800,
 "image":"img10.png",
 "qty":1
 },
@@ -79,239 +79,239 @@
 {
     "id":"10",
 "name": "Blue sapphire",
-"code": "76",
-"price":"8000",
+"code": "B8012 3.88 MM - 0.10 CARATS",
+"price":8600,
 "image":"blue1..png",
 "qty":1
 },
 {
     "id":"11",
 "name": "Blue sapphire",
-"code": "77",
-"price":"7000",
+"code": "B8013 3.88 MM - 0.10 CARATS",
+"price":9877,
 "image":"blue2.png",
 "qty":1
 },
 {
     "id":"12",
 "name": "Blue sapphire",
-"code": "78",
-"price":"7000",
+"code": "B8014 3.88 MM - 0.10 CARATS",
+"price":9007,
 "image":"blue3.png",
 "qty":1
 },
 {
     "id":"13",
 "name": "Blue sapphire",
-"code": "79",
-"price":"7000",
+"code": "B8015 3.88 MM - 0.10 CARATS",
+"price":8966,
 "image":"blue4.png",
 "qty":1
 },
 {
     "id":"14",
 "name": "Blue sapphire",
-"code": "80",
-"price":"7000",
+"code": "B8016 3.88 MM - 0.10 CARATS",
+"price":5000,
 "image":"blue5.png",
 "qty":1
 },
 {
     "id":"15",
 "name": "Blue sapphire",
-"code": "81",
-"price":"7000",
+"code": "B8017 3.88 MM - 0.10 CARATS",
+"price":4400,
 "image":"blue6.png",
 "qty":1
 },
 {
     "id":"16",
 "name": "Blue sapphire",
-"code": "86",
-"price":"7000",
+"code": "B8018 3.88 MM - 0.10 CARATS",
+"price":7900,
 "image":"blue7.png",
 "qty":1
 },
 {
     "id":"17",
 "name": "Blue sapphire",
-"code": "87",
-"price":"7000",
+"code": "B8019 3.88 MM - 0.10 CARATS",
+"price":9999,
 "image":"blue8.png",
 "qty":1
 },
 {
     "id":"18",
 "name": "Blue sapphire",
-"code": "87",
-"price":"7000",
+"code": "B8020 3.88 MM - 0.10 CARATS",
+"price":8100,
 "image":"blue9.png",
 "qty":1
 },
 {
     "id":"19",
 "name": "Blue sapphire",
-"code": "87",
-"price":"7000",
+"code": "B8021 3.88 MM - 0.10 CARATS",
+"price":8204,
 "image":"blue10.png",
 "qty":1
 },
 {
     "id":"26",
 "name": "Green sapphire",
-"code": "89",
-"price":"7000",
+"code": "G3039 3.88 MM - 0.10 CARATS",
+"price":6720,
 "image":"green1.png",
 "qty":1
 },
 {
     "id":"27",
 "name": "Green sapphire",
-"code": "89",
-"price":"7000",
+"code": "G3040 3.88 MM - 0.10 CARATS",
+"price":8690,
 "image":"green2.png",
 "qty":1
 },
 {
     "id":"28",
 "name": "Green sapphire",
-"code": "89",
-"price":"7000",
+"code": "G3041 3.88 MM - 0.10 CARATS",
+"price":7101,
 "image":"green3.png",
 "qty":1
 },{
     "id":"29",
 "name": "Green sapphire",
-"code": "89",
-"price":"7000",
+"code": "G3042 3.88 MM - 0.10 CARATS",
+"price":9000,
 "image":"green4.png",
 "qty":1
 },
 {
     "id":"30",
 "name": "Green sapphire",
-"code": "89",
-"price":"7000",
+"code": "G3043 3.88 MM - 0.10 CARATS",
+"price":5010,
 "image":"green5.png",
 "qty":1
 },
 {
     "id":"31",
 "name": "Green sapphire",
-"code": "89",
-"price":"7000",
+"code": "G3044 3.88 MM - 0.10 CARATS",
+"price":8001,
 "image":"green6.png",
 "qty":1
 },
 {
     "id":"32",
 "name": "Green sapphire",
-"code": "89",
-"price":"7000",
+"code": "G3045 3.88 MM - 0.10 CARATS",
+"price":8920,
 "image":"green7.png",
 "qty":1
 },
 {
     "id":"33",
 "name": "Green sapphire",
-"code": "89",
-"price":"7000",
+"code": "G3046 3.88 MM - 0.10 CARATS",
+"price":9569,
 "image":"green8.png",
 "qty":1
 },
 {
     "id":"34",
 "name": "Green sapphire",
-"code": "89",
-"price":"7000",
+"code": "G3047 3.88 MM - 0.10 CARATS",
+"price":7999,
 "image":"green9.png",
 "qty":1
 },
 {
     "id":"35",
 "name": "Green sapphire",
-"code": "89",
-"price":"7000",
+"code": "G3048 3.88 MM - 0.10 CARATS",
+"price":8900,
 "image":"green10.png",
 "qty":1
 },
 {
     "id":"36",
 "name": "Red sapphire",
-"code": "89",
-"price":"7000",
+"code": "R2001 3.88 MM - 0.10 CARATS",
+"price":9999,
 "image":"ruby1.png",
 "qty":1
 },
 {
     "id":"37",
 "name": "Red sapphire",
-"code": "89",
-"price":"7000",
+"code": "R2002 3.88 MM - 0.10 CARATS",
+"price":6999,
 "image":"ruby2.png",
 "qty":1
 },
 {
     "id":"38",
 "name": "Red sapphire",
-"code": "89",
-"price":"7000",
+"code": "R2003 3.88 MM - 0.10 CARATS",
+"price":9870,
 "image":"rubby3.png",
 "qty":1
 },
 {
     "id":"39",
 "name": "Red sapphire",
-"code": "89",
-"price":"7000",
+"code": "R2004 3.88 MM - 0.10 CARATS",
+"price":7890,
 "image":"rubby4.png",
 "qty":1
 },
 {
     "id":"40",
 "name": "Red sapphire",
-"code": "89",
-"price":"7000",
+"code": "R2005 3.88 MM - 0.10 CARATS",
+"price":8077,
 "image":"rubby5.png",
 "qty":1
 },
 {
     "id":"41",
 "name": "Red sapphire",
-"code": "89",
-"price":"7000",
+"code": "R2006 3.88 MM - 0.10 CARATS",
+"price":6799,
 "image":"rubby6.png",
 "qty":1
 },
 {
     "id":"42",
 "name": "Red sapphire",
-"code": "89",
-"price":"7000",
+"code": "R2007 3.88 MM - 0.10 CARATS",
+"price":3450,
 "image":"rubby7.png",
 "qty":1
 },
 {
     "id":"43",
 "name": "Red sapphire",
-"code": "89",
-"price":"7000",
+"code": "R2008 3.88 MM - 0.10 CARATS",
+"price":5988,
 "image":"rubby8.png",
 "qty":1
 },
 {
     "id":"44",
 "name": "Red sapphire",
-"code": "89",
-"price":"7000",
+"code": "R2009 3.88 MM - 0.10 CARATS",
+"price":9800,
 "image":"rubby9.png",
 "qty":1
 },
 {
     "id":"45",
 "name": "Red sapphire",
-"code": "89",
-"price":"7000",
+"code": "R2010 3.88 MM - 0.10 CARATS",
+"price":7999,
 "image":"rubby10.png",
 "qty":1
 }
