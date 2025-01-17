@@ -9,7 +9,6 @@ const EndNav=()=>{
         
          <Navbar bg="light" data-bs-theme="light">
         <Container style={{backgroundColor:"white"}} fluid>
-          {/* <Navbar.Brand href="#home">GEM-STONE'S</Navbar.Brand> */}
 
     
           <img src="./src/images\logo.png" style={{marginRight:"80px"}}/>

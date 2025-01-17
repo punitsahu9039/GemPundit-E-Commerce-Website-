@@ -20,6 +20,7 @@ function NavScrollExample() {
   const navigate=useNavigate();
 
 const cartpage=()=>{
+  
   navigate("/cart")
 }
 
